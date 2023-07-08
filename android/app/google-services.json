@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742153070140",
+    "project_id": "personal---moi",
+    "storage_bucket": "personal---moi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742153070140:android:e6737e5b280c63e56f8539",
+        "android_client_info": {
+          "package_name": "com.ilionroot.moi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742153070140-24tu6lannggun0j7asc2comcj9qfhuh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb5cDCa38_puYvNrAjj15Wd6tePdWi-fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742153070140-24tu6lannggun0j7asc2comcj9qfhuh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
