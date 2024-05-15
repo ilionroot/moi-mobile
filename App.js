@@ -20,7 +20,7 @@ import Home from './src/pages/Home';
 import Messages from './src/pages/Messages';
 import Message from './src/pages/Message';
 import Pics from './src/pages/Pics';
-import Register from './src/pages/Register';
+import Setup from './src/pages/Setup';
 
 import {navigationRef} from './RootNavigation';
 
@@ -29,10 +29,18 @@ import './ignoreWarnings';
 
 const BottomTabsNavigator = createBottomTabNavigator();
 
-// Icons for tabs
+//#region Icons for tabs
 import AntDesign from 'react-native-vector-icons/AntDesign';
+//#endregion
+
+//#region Stacks
 
 const MessageStack = createStackNavigator();
+const SetupStack = createStackNavigator();
+
+//#endregion
+
+//#region Routes
 
 const MessagesRoutes = () => {
   return (
@@ -45,6 +53,14 @@ const MessagesRoutes = () => {
     </MessageStack.Navigator>
   );
 };
+
+const SetupRoutes = () => {
+  <SetupStack.Navigator>
+    <SetupStack.Screen name="Initial" component={Setup} />
+  </SetupStack.Navigator>;
+};
+
+//#endregion
 
 function App() {
   const [selectedIconAnimations] = React.useState([
@@ -101,6 +117,13 @@ function App() {
             tabBarActiveTintColor: colors.primary,
           }}
           initialRouteName="Home">
+          <BottomTabsNavigator.Screen
+            name="Setup"
+            component={SetupRoutes}
+            options={{
+              tabBarButton: () => {},
+            }}
+          />
           <BottomTabsNavigator.Screen
             name="Interactions"
             component={MessagesRoutes}
